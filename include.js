@@ -1877,6 +1877,13 @@ let cards = [
     imageLink: './Art/Mel-TB/ezio_animation.gif',
     author: 'Melinda',
     githubLink: 'https://github.com/Mel-TB'
+  },
+  {
+    artName: 'Stars',
+    pageLink: './Art/scottskinn/index.html',
+    imageLink: './Art/scottskinn/Stars.gif',
+    author: 'Scott Skinn',
+    githubLink: 'https://github.com/scottskinn'
   }
 ];
 

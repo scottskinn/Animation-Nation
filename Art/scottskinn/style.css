@@ -1,0 +1,54 @@
+:root {
+    --star-color: gold;
+    --star-size: 100px;
+    --star-speed: 5s;
+  }
+
+  .body{
+    margin: 10px;
+  }
+
+  .container {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 100px; 
+  }
+
+  .star {
+    width: var(--star-size);
+    height: var(--star-size);
+    background-color: var(--star-color);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: spin var(--star-speed) infinite linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .star2 {
+    width: var(--star-size);
+    height: var(--star-size);
+    background-color: var(--star-color);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: spin2 var(--star-speed) infinite linear;
+  }
+
+  @keyframes spin2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
